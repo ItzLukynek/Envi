@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviropur</title>
+    <link rel="stylesheet" href="public/style/basic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="d-flex flex-column">
+            <div class="header_top">
+                <div class="d-flex flex-sm-row justify-content-between flex-column">
+                    <div class="logo_wrapper">
+                        <img src="public/assets/images/logo.png" alt="logo">
+                    </div>
+                    <div class="top_nav d-flex flex-row align-items-center">
+                        <ul class="d-flex flex-row align-items-center">
+                            <li><a href="">Reference</a></li>
+                            <li><a href="">Pro projektanty</a></li>
+                            <li><a href="">O nás</a></li>
+                            <li><a href="">Kariéra</a></li>
+                            <li><a href="">Kalendář akcí</a></li>
+                            <li><a href="">Novinky</a></li>
+                        </ul>
+                        <div class="top_icons  flex-row">
+                            <div class="top_icon">
+                                <img src="public/assets/icons/facebook.png" alt="">
+                            </div>
+                            <div class="top_icon">
+                                <img src="public/assets/icons/instagram.png" alt="">
+                            </div>
+                            <div class="top_icon">
+                                <img src="public/assets/icons/linkedin.png" alt="">
+                            </div>
+                            <div class="top_icon">
+                                <img src="public/assets/icons/youtube.png" alt="">
+                            </div>
+                        </div>
+                        <div class="language-selector lang-hide ml-2">
+                            <img src="public/assets/icons/CZ - Czech Republic.png" alt="Czech flag" class="flag">
+                            <span>Česky</span>
+                            <span class="dropdown-arrow"><img src="public/assets/icons/down.png" alt=""></span>
+                        </div>
+                    </div>
+                    <button class="hamburger" id="hamburgerBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="header_bottom justify-content-between">
+                <ul class="d-flex flex-row ">
+                    <li><img src="public/assets/icons/home.png" alt=""></li>
+                    <li><a href="">Pro domácnosti</a></li>
+                    <li><a href="">Pro firmy</a></li>
+                    <li><a href="">Pro průmysl</a></li>
+                    <li><a href="">Pro města a obce</a></li>
+                    <li><a href="">Všechny produkty a služby<img class="nav_down" src="public/assets/icons/down.png" alt=""></a></li>
+                    <li><a href="">Kontakty</a></li>
+                    <li><img src="public/assets/icons/Icon.png" alt=""></li>
+                </ul>
+                <div class="header_buttons">
+                    <button>E-SHOP</button>
+                    <button>SERVIS A REKLAMACE</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-menu-content">
+             <div class="logo_wrapper">
+                        <img src="public/assets/images/logo.png" alt="logo">
+                </div>
+            <div class="mobile-menu-section">
+                
+                <h3>Informace</h3>
+                <ul>
+                    <li><a href="">Reference</a></li>
+                    <li><a href="">Pro projektanty</a></li>
+                    <li><a href="">O nás</a></li>
+                    <li><a href="">Kariéra</a></li>
+                    <li><a href="">Kalendář akcí</a></li>
+                    <li><a href="">Novinky</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-section">
+                <h3>Produkty a služby</h3>
+                <ul>
+                    <li><a href="">Pro domácnosti</a></li>
+                    <li><a href="">Pro firmy</a></li>
+                    <li><a href="">Pro průmysl</a></li>
+                    <li><a href="">Pro města a obce</a></li>
+                    <li><a href="">Všechny produkty a služby</a></li>
+                    <li><a href="">Kontakty</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-buttons">
+                <button>E-SHOP</button>
+                <button>SERVIS A REKLAMACE</button>
+            </div>
+
+            <div class="mobile-social-icons">
+                <div class="top_icon">
+                    <img src="public/assets/icons/facebook.png" alt="">
+                </div>
+                <div class="top_icon">
+                    <img src="public/assets/icons/instagram.png" alt="">
+                </div>
+                <div class="top_icon">
+                    <img src="public/assets/icons/linkedin.png" alt="">
+                </div>
+                <div class="top_icon">
+                    <img src="public/assets/icons/youtube.png" alt="">
+                </div>
+            </div>
+
+            <!-- Language Selector Mobile -->
+            <div class="language-selector" style="margin-top: 20px;">
+                <img src="public/assets/icons/CZ - Czech Republic.png" alt="Czech flag" class="flag">
+                <span>Česky</span>
+                <span class="dropdown-arrow"><img src="public/assets/icons/down.png" alt=""></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-menu-backdrop" id="mobileBackdrop"></div>
+
+
+    <main>
+        <section class="hero">
+            <div class="hero__background">
+                <img src="public/assets/images/bg 2.png" 
+                    alt="Čistírna odpadních vod" 
+                    class="hero__bg-image">
+            </div>
+            
+            <div class="hero__content">
+                <h1 class="hero__title">Dáváme vodě nový život.</h1>
+                
+                <div class="hero__categories">
+                    <div class="category-card">
+                        <div class="category-card__content">
+                            <div class="category-card__icon">
+                                <img src="public/assets/icons/dalsibarak.png" alt="Domácnosti">
+                                
+                            </div>
+                            <div class="category-card__text">
+                                <h3 class="category-card__title">Domácnosti, chaty a chalupy</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-card__content">
+                            <div class="category-card__icon">
+                                <img src="public/assets/icons/banerdum.png" alt="Firmy">
+                                
+                            </div>
+                            <div class="category-card__text">
+                                <h3 class="category-card__title">Firmy a ubytovací zařízení</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Města Card -->
+                    <div class="category-card">
+                        <div class="category-card__content">
+                            <div class="category-card__icon">
+                                <img src="public/assets/icons/barak.png" alt="Města">
+                                
+                            </div>
+                            <div class="category-card__text">
+                                <h3 class="category-card__title">Města a obce</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Průmysl Card -->
+                    <div class="category-card">
+                        <div class="category-card__content">
+                            <div class="category-card__icon">
+                                <img src="public/assets/icons/cernobyl.png" alt="Průmysl">
+                                
+                            </div>
+                            <div class="category-card__text">
+                                <h3 class="category-card__title">Průmysl</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="public/js/menuController.js"></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+@use "../variables" as *;
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+
+    @media(width <= 550px){
+        height: 120vh;
+    }
+    
+    // Background image
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        
+        // Dark overlay
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.082);
+            z-index: 2;
+        }
+    }
+    
+    &__bg-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    // Content wrapper - hlavní obsah
+    &__content {
+        position: relative;
+        z-index: 3;
+        text-align: center;
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 20px 7%;
+        
+        // Kompenzace za fixní header (pokud je)
+        padding-top: 100px;
+        padding-bottom: 60px;
+        
+        @media (width <= 768px) {
+            padding: 80px 15px 50px;
+        }
+        
+        @media (width <= 576px) {
+            padding: 70px 10px 40px;
+        }
+    }
+    
+    // Main title - vycentrovaný mezi header a karty
+    &__title {
+        padding-top: 50px;
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin: auto 0;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        max-width: 900px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        
+        @media (width <= 1200px) {
+            font-size: 3.2rem;
+        }
+        
+        @media (width <= 992px) {
+            font-size: 2.9rem;
+        }
+        
+        @media (width <= 768px) {
+            font-size: 2.5rem;
+        }
+        
+        @media (width <= 576px) {
+            font-size: 2.2rem;
+            line-height: 1.2;
+        }
+    }
+    
+    // Categories grid - na spodku
+    &__categories {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        width: 100%;
+        flex-shrink: 0;
+        
+        @media (width <= 1200px) {
+            gap: 20px;
+            max-width: 900px;
+        }
+        
+        @media (width <= 992px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 600px;
+        }
+        
+        @media (width <= 768px) {
+            gap: 18px;
+        }
+        
+        @media (width <= 576px) {
+            grid-template-columns: 1fr;
+            gap: 15px;
+            max-width: 350px;
+        }
+    }
+}
+
+/* Category Cards */
+.category-card {
+    background: rgba(0, 0, 0, 0.842);
+    padding: 35px 25px;
+    text-align: left;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    
+    
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        
+        @media (width <= 768px) {
+            gap: 15px;
+        }
+        
+        @media (width <= 576px) {
+            text-align: center;
+            gap: 12px;
+        }
+    }
+    
+    // Icon wrapper
+    &__icon {
+        flex-shrink: 0;
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        
+        @media (width <= 768px) {
+            width: 50px;
+            height: 50px;
+        }
+        
+        @media (width <= 576px) {
+            width: 45px;
+            height: 45px;
+            border-radius: 8px;
+        }
+        
+        img, svg {
+            width: 70%;
+            height: 70%;
+            filter: brightness(0) invert(1);
+            transition: transform 0.3s ease;
+        }
+    }
+    
+    
+    // Text content
+    &__text {
+        flex: 1;
+        
+        @media (width <= 576px) {
+            text-align: center;
+        }
+    }
+    
+    &__title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 3px;
+        color: var(--white);
+        line-height: 1.25;
+        
+        @media (width <= 992px) {
+            font-size: 1.1rem;
+        }
+        
+        @media (width <= 768px) {
+            font-size: 1rem;
+        }
+        
+        @media (width <= 576px) {
+            font-size: 0.95rem;
+            margin-bottom: 2px;
+        }
+    }
+    
+    &__subtitle {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.85);
+        font-weight: 400;
+        line-height: 1.25;
+        
+        @media (width <= 992px) {
+            font-size: 0.95rem;
+        }
+        
+        @media (width <= 768px) {
+            font-size: 0.9rem;
+        }
+        
+        @media (width <= 576px) {
+            font-size: 0.85rem;
+        }
+    }
+}
+
+/* Responsive adjustments */
+@media (width <= 768px) {
+    
+    .category-card {
+        padding: 22px 18px;
+    }
+}
+
+@media (width <= 576px) {
+    
+    .category-card {
+        padding: 20px 16px;
+    }
+}
+
+/* Landscape mobile optimization */
+@media (width <= 768px) and (height <= 500px) {
+    
+    .category-card {
+        padding: 15px 12px;
+        
+        &__content {
+            gap: 10px;
+        }
+        
+        &__icon {
+            width: 40px;
+            height: 40px;
+        }
+        
+        &__title {
+            font-size: 0.9rem;
+        }
+        
+        &__subtitle {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+/* Animation for cards on load */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes titleFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero__title {
+    animation: titleFadeIn 1s ease-out 0.3s both;
+}
+
+.category-card {
+    animation: fadeInUp 0.8s ease-out both;
+    
+    &:nth-child(1) { animation-delay: 0.6s; }
+    &:nth-child(2) { animation-delay: 0.7s; }
+    &:nth-child(3) { animation-delay: 0.8s; }
+    &:nth-child(4) { animation-delay: 0.9s; }
+}
+
+/* Special effects for premium look */
+.hero__content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(255, 255, 255, 0.05) 0%,
+        transparent 70%
+    );
+    pointer-events: none;
+    z-index: -1;
+}
