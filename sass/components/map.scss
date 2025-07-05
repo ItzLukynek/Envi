@@ -1,0 +1,123 @@
+@use "../variables" as *;
+
+/* Map Section */
+.map-section {
+    padding: 80px 14%;
+    position: relative;
+    background-color: #F7FAFD;
+    
+    @media (width <= 1200px) {
+        padding: 60px 4%;
+    }
+    
+    @media (width <= 768px) {
+        padding: 50px 4%;
+    }
+    
+    @media (width <= 576px) {
+        padding: 40px 4%;
+    }
+    
+    &-container {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 40px;
+        align-items: center;
+        
+        @media (width <= 992px) {
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+        
+        @media (width <= 768px) {
+            gap: 40px;
+        }
+    }
+    
+    &-content {
+        @media (width <= 992px) {
+            order: 2;
+        }
+    }
+    
+    &-map-wrapper {
+        position: relative;
+        
+        @media (width <= 992px) {
+            order: 1;
+        }
+    }
+    
+    &-map-image {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        
+        @media (width <= 768px) {
+            max-height: 300px;
+            object-fit: contain;
+        }
+    }
+}
+
+/* Content Styling */
+.map-content {
+    &-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--modra);
+        margin-bottom: 20px;
+        line-height: 1.2;
+        
+        @media (width <= 768px) {
+            font-size: 1.8rem;
+            margin-bottom: 18px;
+        }
+        
+        @media (width <= 576px) {
+            font-size: 1.6rem;
+            margin-bottom: 16px;
+        }
+    }
+    
+    &-description {
+        font-size: 1rem;
+        color: var(--text-dark);
+        line-height: 1.6;
+        margin-bottom: 40px;
+        
+        @media (width <= 768px) {
+            font-size: 0.95rem;
+            margin-bottom: 35px;
+        }
+        
+        @media (width <= 576px) {
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+        }
+    }
+    
+   
+}
+
+
+/* Responsive Text Adjustments */
+@media (width <= 992px) {
+    .map-content {
+        text-align: center;
+    }
+    
+    .map-content-highlight-section {
+        text-align: left;
+    }
+}
+
+@media (width <= 576px) {
+    .map-section-container {
+        gap: 30px;
+    }
+    
+    .map-content-description {
+        margin-bottom: 25px;
+    }
+}
