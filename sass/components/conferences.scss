@@ -1,6 +1,5 @@
 @use "../variables" as *;
 
-/* Conferences Section */
 .conferences-section {
     background-color:var(--bg-modra) ;
     padding: 80px 14%;
@@ -71,7 +70,6 @@
     }
 }
 
-/* Header Content */
 .conferences-title {
     font-size: 2rem;
     font-weight: 700;
@@ -104,7 +102,6 @@
     }
 }
 
-/* CTA Button */
 .conferences-cta {
       padding: 11px 40px;
         gap: 10px;
@@ -127,7 +124,6 @@
         
 }
 
-/* Conference Card */
 .conference-card {
     background: var(--tmava-modra);
     transition: all 0.3s ease;

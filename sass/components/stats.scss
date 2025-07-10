@@ -1,6 +1,5 @@
 @use "../variables" as *;
 
-/* Stats Section */
 .stats {
     background-color: var(--white);
     padding: 60px 7%;
@@ -39,7 +38,7 @@
     }
 }
 
-/* Stat Card */
+
 .stat-card {
     text-align: left;
     padding: 25px calc(10% + 10px) ;
@@ -96,7 +95,6 @@
     }
 }
 
-/* Animation for stats on scroll */
 @keyframes countUp {
     from {
         opacity: 0;

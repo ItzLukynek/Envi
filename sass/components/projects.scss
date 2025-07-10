@@ -1,6 +1,5 @@
 @use "../variables" as *;
 
-/* Projects Section */
 .projects-section {
     padding: 80px 14%;
     position: relative;
@@ -70,7 +69,6 @@
     }
 }
 
-/* Header Content */
 .projects-header {
     &-title {
         font-size: 2rem;
@@ -106,7 +104,6 @@
     }
 }
 
-/* CTA Button */
 .projects-cta {
         padding: 11px 40px;
         gap: 10px;

@@ -1,6 +1,5 @@
 @use "../variables" as *;
 
-/* Partners Section */
 .partners-section {
     background-color: var(--white);
     padding: 80px 14%;
@@ -67,7 +66,6 @@
     }
 }
 
-/* Newsletter Section */
 .newsletter-section {
     background: var(--tmava-modra);
     padding: 40px 14%;
@@ -227,7 +225,6 @@
     }
 }
 
-/* Footer */
 .footer {
     background-color: var(--bg-modra);
     color: var(--white);

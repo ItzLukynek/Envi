@@ -183,7 +183,6 @@ header > div {
   }
 }
 
-/* Header Bottom */
 .header_bottom {
   padding: 15px 0px;
   display: flex;
@@ -468,7 +467,6 @@ header > div {
     position: relative;
   }
 }
-/* Hero Section */
 .hero {
   height: 100vh;
   position: relative;
@@ -582,7 +580,6 @@ header > div {
   }
 }
 
-/* Category Cards */
 .category-card {
   background: var(--negr-baner);
   padding: 35px 25px;
@@ -593,6 +590,11 @@ header > div {
   flex-direction: row;
   justify-content: start;
   align-items: center;
+}
+@media (width < 1200px) {
+  .category-card {
+    padding: 20px 15px;
+  }
 }
 .category-card-content {
   display: flex;
@@ -696,7 +698,6 @@ header > div {
   }
 }
 
-/* Responsive adjustments */
 @media (width <= 768px) {
   .category-card {
     padding: 22px 18px;
@@ -707,7 +708,6 @@ header > div {
     padding: 20px 16px;
   }
 }
-/* Landscape mobile optimization */
 @media (width <= 768px) and (height <= 500px) {
   .category-card {
     padding: 15px 12px;
@@ -726,7 +726,6 @@ header > div {
     font-size: 0.8rem;
   }
 }
-/* Animation for cards on load */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -767,7 +766,6 @@ header > div {
   animation-delay: 0.9s;
 }
 
-/* Special effects for premium look */
 .hero-content::before {
   content: "";
   position: absolute;
@@ -781,7 +779,6 @@ header > div {
   z-index: -1;
 }
 
-/* Stats Section */
 .stats {
   background-color: var(--white);
   padding: 60px 7%;
@@ -823,7 +820,6 @@ header > div {
   }
 }
 
-/* Stat Card */
 .stat-card {
   text-align: left;
   padding: 25px calc(10% + 10px);
@@ -880,7 +876,6 @@ header > div {
   }
 }
 
-/* Animation for stats on scroll */
 @keyframes countUp {
   from {
     opacity: 0;
@@ -907,7 +902,6 @@ header > div {
   animation-delay: 0.4s;
 }
 
-/* Map Section */
 .map-section {
   padding: 80px 14%;
   position: relative;
@@ -970,7 +964,6 @@ header > div {
   }
 }
 
-/* Content Styling */
 .map-content {
   padding: 50px 0px;
 }
@@ -1031,7 +1024,6 @@ header > div {
   }
 }
 
-/* Responsive Text Adjustments */
 @media (width <= 992px) {
   .map-content {
     text-align: center;
@@ -1048,7 +1040,6 @@ header > div {
     margin-bottom: 25px;
   }
 }
-/* Projects Section */
 .projects-section {
   padding: 80px 14%;
   position: relative;
@@ -1123,7 +1114,6 @@ header > div {
   }
 }
 
-/* Header Content */
 .projects-header-title {
   font-size: 2rem;
   font-weight: 700;
@@ -1160,7 +1150,6 @@ header > div {
   }
 }
 
-/* CTA Button */
 .projects-cta {
   padding: 11px 40px;
   gap: 10px;
@@ -1291,7 +1280,6 @@ header > div {
     padding: 15px;
   }
 }
-/* Conferences Section */
 .conferences-section {
   background-color: var(--bg-modra);
   padding: 80px 14%;
@@ -1367,7 +1355,6 @@ header > div {
   }
 }
 
-/* Header Content */
 .conferences-title {
   font-size: 2rem;
   font-weight: 700;
@@ -1405,7 +1392,6 @@ header > div {
   }
 }
 
-/* CTA Button */
 .conferences-cta {
   padding: 11px 40px;
   gap: 10px;
@@ -1428,7 +1414,6 @@ header > div {
   }
 }
 
-/* Conference Card */
 .conference-card {
   background: var(--tmava-modra);
   transition: all 0.3s ease;
@@ -1577,7 +1562,6 @@ header > div {
     gap: 15px;
   }
 }
-/* Aktuality Section */
 .aktuality-section {
   padding: 80px 14%;
   position: relative;
@@ -1652,7 +1636,6 @@ header > div {
   }
 }
 
-/* Header Content */
 .aktuality-header-title {
   font-size: 2rem;
   font-weight: 700;
@@ -1671,7 +1654,6 @@ header > div {
   }
 }
 
-/* CTA Button */
 .aktuality-cta {
   padding: 11px 40px;
   gap: 10px;
@@ -1699,7 +1681,6 @@ header > div {
   text-decoration: none;
 }
 
-/* Aktuality Card */
 .aktuality-card {
   background-color: var(--white);
   overflow: hidden;
@@ -1812,8 +1793,7 @@ header > div {
   .aktuality-card-content {
     padding: 15px;
   }
-} /* Akce a konference */
-/* Partners Section */
+}
 .partners-section {
   background-color: var(--white);
   padding: 80px 14%;
@@ -1884,7 +1864,6 @@ header > div {
   }
 }
 
-/* Newsletter Section */
 .newsletter-section {
   background: var(--tmava-modra);
   padding: 40px 14%;
@@ -2043,7 +2022,6 @@ header > div {
   }
 }
 
-/* Footer */
 .footer {
   background-color: var(--bg-modra);
   color: var(--white);

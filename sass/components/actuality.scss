@@ -1,6 +1,5 @@
 @use "../variables" as *;
 
-/* Aktuality Section */
 .aktuality-section {
     padding: 80px 14%;
     position: relative;
@@ -70,7 +69,6 @@
     }
 }
 
-/* Header Content */
 .aktuality-header {
     &-title {
         font-size: 2rem;
@@ -89,7 +87,6 @@
     }
 }
 
-/* CTA Button */
 .aktuality-cta {
     padding: 11px 40px;
     gap: 10px;
@@ -117,7 +114,6 @@
     }
 }
 
-/* Aktuality Card */
 .aktuality-card {
     background-color: var(--white);
     overflow: hidden;
@@ -234,5 +230,5 @@
     .aktuality-card-content {
         padding: 15px;
     }
-}/* Akce a konference */
+}
 
