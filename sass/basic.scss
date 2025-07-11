@@ -16,7 +16,12 @@
     font-family: "Poppins" !important;
 }
 
-body{
-    max-width: 1920px; 
-    margin: 0 auto;
+body {
+    max-width: 1920px;
+    margin: 0 auto !important;
+
+    header{
+       max-width: 1920px;
+     margin: 0 auto !important; 
+    }
 }

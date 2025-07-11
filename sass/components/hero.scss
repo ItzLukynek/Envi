@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     min-height: 350px;
+    max-height: 1000px;
 
     @media(width <= 550px){
         height: 120vh;
